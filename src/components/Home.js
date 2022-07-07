@@ -1,5 +1,6 @@
 import '../styles/App.scss';
 import Menu from './Menu';
+
 function Home(props) {
   return (
     <>
