@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+}
+.header {
+  display: flex ;
+  justify-content: space-between;
+  color: lightgrey;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+  :hover{
+    color: rgb(230, 68, 95);
+  }
+
+}
+.header_menu--list{
+  list-style:none;
+  display: flex;
+  gap: 20px;
+}
+.main__container--name{
+color: white;
+font-size: 80px;
+margin-top: 50px;
+margin-left: 50px;
+}
+.main__container--title{
+  color: rgb(230, 68, 95);
+  margin-left: 50px;
+  font-size: 30px;
+}
+.main__container--button{
+  margin-left: 50px;
+}
