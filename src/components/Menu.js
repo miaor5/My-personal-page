@@ -5,7 +5,7 @@ function Menu(props) {
     <>
       <header className="header">
         <div className="header__title">
-          <h4 className="header__title--title">My porfolio</h4>
+          <h4 className="header__title--title">Maria Ortiz</h4>
         </div>
         <div className="header_menu">
           <nav>
@@ -14,13 +14,13 @@ function Menu(props) {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/Aboutme">About me</Link>
+                <Link to="/Aboutme">About Me</Link>
               </li>
               <li>
-                <Link to="/Myprojects">My projects</Link>
+                <Link to="/Myprojects">Projects</Link>
               </li>
               <li>
-                <Link to="/Contactme">Contact me</Link>
+                <Link to="/Contactme">Contact</Link>
               </li>
             </ul>
           </nav>

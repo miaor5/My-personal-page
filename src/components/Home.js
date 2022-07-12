@@ -1,10 +1,13 @@
 import '../styles/App.scss';
 import Menu from './Menu';
+import Social from './Social';
+import { Link } from 'react-router-dom';
 
 function Home(props) {
   return (
     <>
       <Menu />
+      <Social />
       <main className="main__container">
         <h1 className="main__container--name">
           Hi,
@@ -12,10 +15,12 @@ function Home(props) {
           <br /> web developer
         </h1>
         <h3 className="main__container--title">Front-End Developer</h3>
-        <button className="main__container--button">CONTACT ME </button>
+        <Link to="/Contactme" className="main__container--button">
+          CONTACT ME{' '}
+        </Link>
       </main>
 
-      <footer>This is my footer</footer>
+      <footer></footer>
     </>
   );
 }
