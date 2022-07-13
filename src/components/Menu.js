@@ -17,6 +17,9 @@ function Menu(props) {
                 <Link to="/Aboutme">About Me</Link>
               </li>
               <li>
+                <Link to="/Skills">Skills</Link>
+              </li>
+              <li>
                 <Link to="/Myprojects">Projects</Link>
               </li>
               <li>
