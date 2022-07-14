@@ -11,7 +11,9 @@ function Menu(props) {
           <nav>
             <ul className="header_menu--list">
               <li>
-                <Link to="/">Home</Link>
+                <a class="" href="./Home#about">
+                  HOME
+                </a>
               </li>
               <li>
                 <Link to="/Aboutme">About Me</Link>

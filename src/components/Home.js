@@ -2,6 +2,10 @@ import '../styles/App.scss';
 import Menu from './Menu';
 import Social from './Social';
 import { Link } from 'react-router-dom';
+import Aboutme from './Aboutme';
+import Skills from './Skills';
+import Myprojects from './Myprojects';
+import Contactme from './Contactme';
 
 function Home(props) {
   return (
@@ -19,8 +23,9 @@ function Home(props) {
           CONTACT ME{' '}
         </Link>
       </main>
-
-      <footer></footer>
+      <Aboutme />
+      <Skills />
+      <Myprojects />
     </>
   );
 }

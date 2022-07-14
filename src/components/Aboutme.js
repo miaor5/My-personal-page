@@ -5,10 +5,11 @@ import image from '../img/file1.jpg';
 function Aboutme(props) {
   return (
     <>
-      <Menu />
       <div className="aboutme">
         <section className="aboutme__text">
-          <h1 className="aboutme__text--title">Maria Ortiz</h1>
+          <h1 className="aboutme__text--title" id="about">
+            Maria Ortiz{' '}
+          </h1>
           <p className="aboutme__text--description">
             I am a motivated and responsible person with excellent individual
             and team working skills, highly adaptable with continuous desire to
