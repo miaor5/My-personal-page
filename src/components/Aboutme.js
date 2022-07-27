@@ -1,5 +1,4 @@
 import '../styles/App.scss';
-import Menu from './Menu';
 import image from '../img/file1.jpg';
 
 function Aboutme(props) {

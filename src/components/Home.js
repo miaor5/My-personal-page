@@ -13,7 +13,7 @@ function Home(props) {
       <Menu />
       <Social />
       <main className="main__container">
-        <h1 className="main__container--name">
+        <h1 className="main__container--name" id="Home">
           Hi,
           <br /> I am Maria,
           <br /> web developer
@@ -26,6 +26,7 @@ function Home(props) {
       <Aboutme />
       <Skills />
       <Myprojects />
+      <Contactme />
     </>
   );
 }

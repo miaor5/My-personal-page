@@ -1,11 +1,10 @@
 import '../styles/App.scss';
-import Menu from './Menu';
 import image2 from '../img/file2.png';
 
 function Myprojects() {
   return (
     <>
-      <div className="container">
+      <div className="container_b">
         <h1 className="skills__title">My projects</h1>
         <ul className="myprojects__list">
           <li className="myprojects__container">
