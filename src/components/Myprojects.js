@@ -4,6 +4,7 @@ import image2 from '../img/file2.png';
 function Myprojects() {
   return (
     <>
+      <a id="projects"> </a>
       <div className="container_b">
         <h1 className="skills__title">My projects</h1>
         <ul className="myprojects__list">

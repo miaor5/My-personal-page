@@ -9,6 +9,7 @@ import image7 from '../img/file7.jpg';
 function Skills() {
   return (
     <>
+      <a id="skills"> </a>
       <div className="container">
         <h1 className="skills__title">My skills</h1>
         <ul className="skills">

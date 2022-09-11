@@ -19,9 +19,9 @@ function Home(props) {
           <br /> web developer
         </h1>
         <h3 className="main__container--title">Front-End Developer</h3>
-        <Link to="/Contactme" className="main__container--button">
-          CONTACT ME{' '}
-        </Link>
+        <a href="#contact" className="main__container--button">
+          CONTACT ME
+        </a>
       </main>
       <Aboutme />
       <Skills />

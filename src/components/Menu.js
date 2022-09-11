@@ -11,16 +11,16 @@ function Menu(props) {
               <a href="/">HOME</a>
             </li>
             <li>
-              <Link to="about">ABOUT ME</Link>
+              <a href="#about">ABOUT</a>
             </li>
             <li>
-              <Link to="/Skills">SKILLS</Link>
+              <a href="#skills">SKILLS</a>
             </li>
             <li>
-              <Link to="/Myprojects">PROJECTS</Link>
+              <a href="#projects">PROJECTS</a>
             </li>
             <li>
-              <Link to="/Contactme">CONTACT</Link>
+              <a href="#contact">CONTACT ME</a>
             </li>
           </ul>
         </div>

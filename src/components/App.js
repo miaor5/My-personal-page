@@ -8,13 +8,7 @@ import Skills from './Skills';
 const App = () => {
   return (
     <>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/Aboutme" component={<Aboutme />} />
-        <Route exact path="/Myprojects" element={<Myprojects />} />
-        <Route exact path="/Contactme" element={<Contactme />} />
-        <Route exact path="/Skills" element={<Skills />} />
-      </Routes>
+      <Home />
     </>
   );
 };
