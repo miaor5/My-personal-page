@@ -7,7 +7,7 @@ import { BsMailbox } from 'react-icons/bs';
 function Social() {
   return (
     <>
-      <nav className="social__links">
+      {/* <nav className="social__links">
         <a href="https://github.com/miaor5" alt="Github" className="github">
           <BsGithub />
         </a>
@@ -21,7 +21,7 @@ function Social() {
         <a href="mailto:ortiz.maria.mero@gmail.com">
           <BsMailbox />
         </a>
-      </nav>
+      </nav> */}
     </>
   );
 }

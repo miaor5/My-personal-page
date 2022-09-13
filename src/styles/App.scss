@@ -1,11 +1,10 @@
 body{
   background-color: white;
 }
+//Menu
 .header {
-  display: flex ;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vh;
+  background-color: red;
+  width: 100vw;
   color: rgb(207, 80, 207);
   margin-left: 50px;
   margin-right: 10px;
@@ -17,26 +16,44 @@ body{
 }
 .header__list{
   position: fixed;
+  // right: 30px;
   list-style:none;
   text-decoration: none;
   display: flex;
   font-weight: bold;
   gap: 20px;
   font-size: 17px;
-  margin-left: 40px;
+  // margin-left: 40px;
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .header__list{
+    display: none;
+  }
+}
+
+
+//Home 
+.main__container{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
 }
 .main__container--name{
 color: black;
-font-size: 70px;
-margin-top: 40px;
+font-size: 6vw;
+margin-top: 0.1vh;
 margin-left: 200px;
 }
 .main__container--title{
   color:rgb(207, 80, 207);
   margin-left: 200px;
-  margin-top: -40px;
+  margin-top: -20px;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 4vw;
 }
 .main__container--button{
   margin-left: 200px;
@@ -54,13 +71,72 @@ margin-left: 200px;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
+@media (max-width: 768px) {
 
+  .main__container{
+    height: 100vh;
+  }
+  .main__container--name{
+    color: black;
+    // font-size: 5vw;
+    margin-top: 50%;
+    margin-left: 50px;
+    }
+    .main__container--title{
+      color:rgb(207, 80, 207);
+      margin-left: 50px;
+      margin-top: 15%;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+    .main__container--button{
+      display: none;
+      
+    }
+}
+
+//Home-Social
+
+.social__links{
+  display: flex;
+  flex-direction: column;
+  font-size: 3vw;
+  gap: 40px;
+  margin-left: 10%;
+  margin-top: 100px;
+  color: rgb(207, 80, 207);
+   :hover{
+    font-size: 4vw;
+    color: rgba(255, 0, 130, 0.5);
+   }
+  }
+  @media (max-width: 768px) {
+    .social__links{
+      display: flex;
+      flex-direction: row;
+      font-size: 40px;
+      color: rgb(207, 80, 207);
+      // position: absolute;
+      // top: 500px;
+      // left: 60px;
+   :hover{
+    font-size: 50px;
+    color: rgba(255, 0, 130, 0.5);
+   }
+  }
+  .github{
+    margin-right: 40px;
+  }
+  .ln{
+    margin-right: 40px;
+  }
+    } 
 //Skills
 .container{
   height: 100vh;
   width: 100%;
   padding-top: 50px;
-  
+
 }
 .skills__title{
   margin-top: 50px;
@@ -98,25 +174,17 @@ margin-left: 200px;
    box-shadow: 0px 0px 15px 15px rgb(207, 80, 207);
   -webkit-box-shadow: 0px 0px 15px 15px rgb(207, 80, 207);
 }
-
-
-//Social
-
-.social__links{
-display: flex;
-flex-direction: column;
-font-size: 35px;
-color: rgb(207, 80, 207);
-position: absolute;
-top: 280px;
-left: 50px;
-gap: 40px;
-
- :hover{
-  font-size: 50px;
-  color: rgba(255, 0, 130, 0.5);
- }
+@media (max-width: 768px) {
+  .container{
+    padding-top: 150px;
+    padding-bottom: 550px;
+  }
+  .skills--icons{
+    width: 100px;
+    height: 100px;
+  }
 }
+
 
 //About Me
 
@@ -125,7 +193,7 @@ gap: 40px;
   width: 100%;
   display: grid;
   column-gap: auto;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows:1fr 1fr 1fr;
   justify-content: space-between;
   width: 900px;
@@ -170,50 +238,28 @@ gap: 40px;
 .aboutme{
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
+  width: 100%;
+  margin-left: 40px;
   margin-top: 200px;
+
     &__image{
-      margin-left: 8px; 
-      margin-top: 20px;
+      margin-left: 20px;
     }
     &__text{
-      width: 290px; 
       margin-bottom: 250px;
       font-size: 20px;
+      width: auto;
+      flex-wrap: wrap;
+
     }
     &__title{
-      margin-left: 50px; 
+      padding-bottom: 20px;
       }
 }
 
 }
 
-// @media all and (min-width: 1200px) {
-//   .aboutme{
-//     display: flex;
-//     flex-direction: column;
-//     margin-left: 60px;
-//     margin-top: 200px;
-//       &__image{
-//         margin-left: 8px; 
-//         margin-top: 20px;
-//       }
-//       &__text{
-//         width: 290px; 
-//         margin-bottom: 250px;
-//         font-size: 20px;
-//       }
-//       &__title{
-//         margin-left: 50px; 
-//         }
-//   }
   
-//   }
-  
-
-  
-  
-
 
 //Myprojects
 

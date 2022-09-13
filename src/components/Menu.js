@@ -4,7 +4,7 @@ function Menu(props) {
   return (
     <>
       <header className="header">
-        <h4 className="header__title">Maria Ortiz</h4>
+      
         <div>
           <ul className="header__list">
             <li>
