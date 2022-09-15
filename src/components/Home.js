@@ -1,4 +1,3 @@
-import '../styles/App.scss';
 import Menu from './Menu';
 import Aboutme from './Aboutme';
 import Skills from './Skills';
