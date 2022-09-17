@@ -6,9 +6,9 @@ function Aboutme(props) {
     <>
       <a id="about"> </a>
       <div className="aboutme">
-        <h1 className="aboutme__title">Maria Ortiz </h1>
         <img className="aboutme__image" src={image} alt="Maria Ortiz" />
         <div className="aboutme__text">
+          <h1 className="aboutme__title">Maria Ortiz </h1>
           <p>
             I am a motivated and responsible person with excellent individual
             and team working skills, highly adaptable with continuous desire to
