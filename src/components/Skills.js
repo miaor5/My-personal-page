@@ -10,7 +10,7 @@ function Skills() {
   return (
     <>
       <a id="skills"> </a>
-      <div className="container">
+      <div className="container_skills">
         <h1 className="skills__title">My skills</h1>
         <ul className="skills">
           <li>

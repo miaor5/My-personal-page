@@ -12,50 +12,53 @@ function Myprojects() {
         <ul className="myprojects__list">
           <li className="myprojects__container">
             <section className="myprojects__container--text">
-              <h2>Mi primer proyecto</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                neque debitis voluptatum iste laboriosam reiciendis dolorem,
-                voluptas dolore doloremque, qui velit quia, quis quasi
-                quibusdam. Sapiente rem inventore fuga molestiae?{' '}
+                Bootcamp group project. Creator of personalized digital business
+                cards with the option to share through social networks.
               </p>
-              <a href="" className="myproject--button">
-                Ir a mi proyecto
+              <a
+                href="https://miaor5.github.io/Awesome-Profile-Card/"
+                className="myproject--button"
+              >
+                Go to my project
               </a>
             </section>
+            <h2 className="text-title">Digital business card</h2>
             <img className="myprojects__container--img" src={project1} alt="" />
           </li>
 
           <li className="myprojects__container">
             <section className="myprojects__container--text">
-              <h2>Mi primer proyecto</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                neque debitis voluptatum iste laboriosam reiciendis dolorem,
-                voluptas dolore doloremque, qui velit quia, quis quasi
-                quibusdam. Sapiente rem inventore fuga molestiae?{' '}
+                Search engine for movies and series of the best 'wow' of actor
+                Owen Wilson. Includes filters to facilitate the search.
               </p>
-              <a href="" className="myproject--button">
-                Ir a mi proyecto
+              <a
+                href="https://miaor5.github.io/Movie-search-engine/"
+                className="myproject--button"
+              >
+                Go to my project
               </a>
             </section>
-            <img className="myprojects__container--img" src={project2} alt="" />
+            <h2 className="text-title">Movie search engine </h2>
+            <img className="myprojects__container--img" src={project3} alt="" />
           </li>
 
           <li className="myprojects__container">
             <section className="myprojects__container--text">
-              <h2>Mi primer proyecto</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-                neque debitis voluptatum iste laboriosam reiciendis dolorem,
-                voluptas dolore doloremque, qui velit quia, quis quasi
-                quibusdam. Sapiente rem inventore fuga molestiae?{' '}
+                Layout and design of an online furniture website. Responsive
+                design with mobile and tablet.
               </p>
-              <a href="" className="myproject--button">
-                Ir a mi proyecto
+              <a
+                href="https://miaor5.github.io/One-Space-Store-/"
+                className="myproject--button"
+              >
+                Go to my project
               </a>
             </section>
-            <img className="myprojects__container--img" src={project3} alt="" />
+            <h2 className="text-title">One Space Store</h2>
+            <img className="myprojects__container--img" src={project2} alt="" />
           </li>
         </ul>
       </div>
