@@ -31,12 +31,13 @@ body{
   flex-direction: row;
   height: 100vh;
   width: 100vw;
+  margin-bottom: 5vw;
 
   &--name{
    color: black;
    font-size: 6vw;
    margin-left: 200px;
-   margin-top: 10vh;
+   margin-top: 10vw;
    
   }
   &--title{
@@ -63,27 +64,7 @@ body{
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
   }
 }
-@media (max-width: 768px) {
 
-  .main__container{
-    height: 100vh;
-    &--name{
-      color: black;
-      margin-top: 50%;
-      margin-left: 50px;
-    }
-    &--title{
-      color:rgb(207, 80, 207);
-      margin-left: 50px;
-      margin-top: 15%;
-      margin-bottom: 20px;
-      font-size: 25px;
-    }
-    &--button{
-      display: none;
-    }
-  }
-}
 .social__links{
   display: flex;
   flex-direction: column;
@@ -97,27 +78,52 @@ body{
     color: rgba(255, 0, 130, 0.5);
    }
   }
-  @media (max-width: 768px) {
-    .social__links{
-      display: flex;
-      flex-direction: row;
-      font-size: 40px;
-      color: rgb(207, 80, 207);
-      // position: absolute;
-      // top: 500px;
-      // left: 60px;
+
+@media (max-width: 768px) {
+
+  .main__container{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+    justify-content:center;
+    
+    &--name{
+      color: black;
+      margin-top: 10vw;
+      margin-left: 50px;
+      font-size: 12vw;
+    }
+    &--title{
+      color:rgb(207, 80, 207);
+      margin-left: 50px;
+      margin-top: 15%;
+      margin-bottom: 20px;
+      font-size: 7.5vw;
+    }
+    &--button{
+      display: none;
+    }
+  }
+  .social__links{
+    display: flex;
+    flex-direction: row;
+    font-size: 8vw;
+    margin-left: 50px;
+
    :hover{
     font-size: 50px;
     color: rgba(255, 0, 130, 0.5);
-   }
-  }
-  .github{
-    margin-right: 40px;
-  }
-  .ln{
-    margin-right: 40px;
-  }
-    } 
+ }
+}
+.github{
+  margin-right: 40px;
+}
+.ln{
+  margin-right: 40px;
+}
+}
+
 
 //Skills
 .container_skills{
@@ -164,9 +170,14 @@ body{
   -webkit-box-shadow: 0px 0px 15px 15px rgb(207, 80, 207);
 }
 @media (max-width: 768px) {
-  .container{
-    padding-top: 150px;
-    padding-bottom: 550px;
+  .container_skills{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15vw;
+    margin-top:5vw;
+  }
+  .skills{
+    margin-top: 10vw;
   }
   .skills--icons{
     width: 12vh;
@@ -228,21 +239,23 @@ body{
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 40px;
-  margin-top: 200px;
+  height: 100%;
+  margin-left: 50px;
+  margin-bottom: 30vw;
 
     &__image{
-      margin-left: 20px;
+    width: 60vw;
+    height: 60vw;
+    margin-left: 7vw;
     }
     &__text{
-      margin-bottom: 250px;
-      font-size: 20px;
-      width: auto;
-      flex-wrap: wrap;
-
+      font-size: 4.5vw;
+      width: 70vw;
+      margin-top: 50px;
     }
     &__title{
       padding-bottom: 20px;
+      font-size: 8vw;
       }
 }
 
@@ -318,12 +331,58 @@ margin-right: 5%;
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
 
+@media (max-width: 768px) {
+
+  .myprojects__list{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    .myprojects__container{
+      width: 70vw;
+      height: 70vw;
+      border: 1px solid;
+
+        &--img{
+          width: 50vw;
+          height: 30vw;
+          margin-top: 3vw;
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+        &--text{
+          margin-left: 2vw;
+          margin-right: 2vw;
+          line-height:180%;
+          //margin-top: -2vw;
+          margin-bottom: 2vw;
+          text-align: justify;
+          font-size: 3vw;
+        }
+    }
+    .text-title{
+      font-size: 4vw;
+    }
+    .myproject--button{
+      font-size: 3vw;
+    }
+
+    .project__title{ 
+      font-size: 9vw;
+      margin-bottom: 50px;
+    }
+
+}
 
 //Contactme
 .container{
   height: 100%;
   width: 100vw;
-  margin-top: 8vw;
+  margin-top: 10vw;
   margin-bottom: 8vw;
 }
 .form {
@@ -369,7 +428,6 @@ margin-right: 5%;
   padding-bottom: 20px;
 }
 
-
 .submit {
   background-color: rgb(207, 80, 207);
   color: white;
@@ -413,11 +471,39 @@ margin-right: 5%;
 
   
 }
+
+@media (max-width: 1200px) {
+  .form {
+    width: 90vw;
+    height: 90vw;
+  }
+  .label{
+    font-size: 3vw;
+  }
+  .input{
+    font-size: 2.5vw;
+  }
+  .submit{
+    margin-top: 4vw;
+    height: 4vw;
+   }
+ 
+}
 @media (max-width: 1000px) {
   .form {
     width: 90vw;
     height: 90vw;
   }
+  .label{
+    font-size: 3vw;
+  }
+  .input{
+    font-size: 2.5vw;
+  }
+  .submit{
+    margin-top: 2vw;
+    height: 4vw;
+   }
  
 }
 @media (max-width: 820px) {
@@ -444,10 +530,10 @@ margin-right: 5%;
     height: 85vw;
   }
   .label{
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .input{
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .submit{
     margin-top: 2vw;
@@ -463,14 +549,16 @@ margin-right: 5%;
   }
   
   .label{
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .input{
     font-size: 2.5vw;
   }
   .submit{
-    margin-top: 2vw;
+    margin-top: 1vw;
+    margin-left: 40%;
     height: 4vw;
+    font-size: 3vw;
    }
 }
 @media all and (min-width: 1200px) {
@@ -488,10 +576,10 @@ margin-right: 5%;
   
   }
   .label{
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .input{
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
   .submit{
     margin-top: 2vw;
